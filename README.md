@@ -89,7 +89,7 @@ We are not currently accepting contributions to this project.
 None
 
 ## Questions
-Find us on GitHub:
+Find us on GitHub: <br/>
 [Creator: Insha Sayani](https://github.com/isayani)<br>
 [ORM E-Comm Backend](https://github.com/isayani/orm-ecomm-backend)
 
