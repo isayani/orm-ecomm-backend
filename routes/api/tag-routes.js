@@ -39,7 +39,7 @@ router.get('/:id', async (req, res) => {
 router.post('/', async (req, res) => {
   try {
     const newTagData = await Tag.create({
-      product_id: req.body.product_id
+      tag_name: req.body.tag_name
     });
     res.status(200).json(newTagData);
   } catch (err) {
@@ -48,12 +48,17 @@ router.post('/', async (req, res) => {
 });
 
 // update a tag's name by its `id` value
-router.put('/:id', (req, res) => {
-  Tag.update(req.body, {
-    where: {
-      id: req.params.id
-    }
-  });
+router.put('/:id', async (req, res) => {
+  try {
+    const updatedTagData = await Tag.update(req.body, {
+      where: {
+        id: req.params.id
+      }
+    });
+    res.status(200).json(updatedTagData);
+  } catch (error) {
+    res.status(400).json(err);
+  }
 });
 
 // delete on tag by its `id` value
