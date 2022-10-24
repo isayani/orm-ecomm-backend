@@ -36,14 +36,6 @@ router.get('/:id', async (req, res) => {
 
 // create new product
 router.post('/', async (req, res) => {
-  try {
-    const newProductData = await Product.create({
-      category_id: req.body.category_id
-    });
-    res.status(200).json(newProductData);
-  } catch (err) {
-    res.status(400).json(err);
-  }
   /* req.body should look like this...
     {
       product_name: "Basketball",
