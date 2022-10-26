@@ -53,7 +53,11 @@ To run this locally:
 
 The following animation shows the application's functionality from start to finish, including how to connect to mySQL database, entering schema and seeding. It also demonstrates invoking the application and testing all categories, product, and tag routes (GET, POST, DEL, PUT) in Insomnia:
 
-![E-Commerce Application from start to finish](./assets/orm_demo.mp4)
+
+
+https://user-images.githubusercontent.com/107900180/197929115-a090dac4-7b21-4632-999a-b66eb9d51a3c.mp4
+
+
 
 ## License 
 This project is licensed under the MIT license.
